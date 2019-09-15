@@ -1,0 +1,25 @@
+<div class="container" style="margin-top: 100px">
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">Hình</th>
+                <th scope="col">Họ và Tên</th>
+                <th scope="col">Ngày Sinh</th>
+                <th scope="col">Giới Tính</th>
+                <th scope="col">Điểm</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor='let student of students '>
+                <td><img src="{{student.photo}}" width="70px " height="auto" alt="student.fullname"></td>
+
+                <td>{{student.fullname}}</td>
+                <td>{{student.birthday}}</td>
+                <td>{{student.gender}}</td>
+                <td>{{student.mark}}</td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,36 @@
+<button type="button" class="btn btn-outline-warning btn-block">Home / <span><a routerLink="/page2">Sinh Viên</a> /
+        {{ student.lastName }}</span></button>
+<div class="card">
+    <div class="card-header">
+        <span><i class="fas fa-table"></i></span>
+        Chi Tiết
+    </div>
+    <div class="card-body">
+        <p><strong>Last Name: <br> </strong> {{ student.lastName }}</p>
+        <p><strong>First Name: <br></strong>{{ student.firstName }}</p>
+        <p><strong>Enroll Date:<br> </strong>{{ student.enrollmentDate | date:"dd/MM/yyyy" }}</p>
+        <table class="table table-bordered">
+            <thead>
+                <th>Course Title</th>
+                <th>Grade</th>
+                <th>Credits</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let enrollment of enrollments">
+                    <td>{{ courses[enrollment.courseId].title }}</td>
+                    <td>{{ enrollment.grade.charCodeAt(0) }} </td>
+                    <td>{{ courses[enrollment.courseId].credits }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="card-footer">
+        <a routerLink="/page2">
+            <strong>
+                <span style="font-size: 25px;">&#x2190;</span>
+                Back
+            </strong>
+        </a>
+    </div>
+
+</div>
