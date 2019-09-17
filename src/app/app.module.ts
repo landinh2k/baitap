@@ -18,6 +18,7 @@ import { RouterModule } from '@angular/router';
 import { DetailComponent } from './detail/detail.component';
 import { GiohangComponent } from './giohang/giohang.component';
 import { ChitietfComponent } from './chitietf/chitietf.component';
+import { Lab3Component } from './lab3/lab3.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ChitietfComponent } from './chitietf/chitietf.component';
     ProductsComponent,
     DetailComponent,
     GiohangComponent,
-    ChitietfComponent
+    ChitietfComponent,
+    Lab3Component
   ],
   imports: [
     BrowserModule,
@@ -45,6 +47,7 @@ import { ChitietfComponent } from './chitietf/chitietf.component';
       { path: 'page1/bai1', component: Bai1Component },
       // 
       { path: 'page2', component: Menu2Component },
+      { path: 'page3', component: Lab3Component },
       // { path: 'page2/homelab2', component: Homelab2Component },
       // { path: 'student', component: Homelab2Component },
       { path: 'student/:id', component: ChitietfComponent },

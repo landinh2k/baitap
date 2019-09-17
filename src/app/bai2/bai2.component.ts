@@ -18,7 +18,7 @@ export class Bai2Component implements OnInit {
       fullname: 'Phan Thị Nở ',
       birthday: '20-12-1999',
       gender: 'Nữ',
-      photo: '../../assets/images/hinh22].jpg',
+      photo: '../../assets/images/hinh22]   .jpg',
       mark: 8.5
     },
     {
