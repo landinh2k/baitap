@@ -19,7 +19,7 @@ import { DetailComponent } from './detail/detail.component';
 import { GiohangComponent } from './giohang/giohang.component';
 import { ChitietfComponent } from './chitietf/chitietf.component';
 import { Lab3Component } from './lab3/lab3.component';
-
+import { CartService } from './service/cart.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +33,8 @@ import { Lab3Component } from './lab3/lab3.component';
     DetailComponent,
     GiohangComponent,
     ChitietfComponent,
-    Lab3Component
+    Lab3Component,
+
   ],
   imports: [
     BrowserModule,
@@ -63,7 +64,7 @@ import { Lab3Component } from './lab3/lab3.component';
     ], { enableTracing: true })
 
   ],
-  providers: [],
+  providers: [CartService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
