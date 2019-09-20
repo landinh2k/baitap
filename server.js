@@ -3,7 +3,7 @@ const path = require('path');
 
 const app = express();
 
-app.use(express.static(__dirname + '/dist/baitap'));
+app.use(express.static(__dirname + '/dist/baitap/'));
 
 app.get('/*', function (req, res) {
     res.sendFile(path.join(__dirname + '/dist/baitap/index.html'));
