@@ -20,6 +20,10 @@ import { GiohangComponent } from './giohang/giohang.component';
 import { ChitietfComponent } from './chitietf/chitietf.component';
 import { Lab3Component } from './lab3/lab3.component';
 import { CartService } from './service/cart.service';
+import { TtsvComponent } from './ttsv/ttsv.component';
+import { HcnComponent } from './hcn/hcn.component';
+import { TtlComponent } from './ttl/ttl.component';
+import { BanhangComponent } from './banhang/banhang.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,6 +38,10 @@ import { CartService } from './service/cart.service';
     GiohangComponent,
     ChitietfComponent,
     Lab3Component,
+    TtsvComponent,
+    HcnComponent,
+    TtlComponent,
+    BanhangComponent,
 
   ],
   imports: [
@@ -59,6 +67,10 @@ import { CartService } from './service/cart.service';
       { path: 'products', component: ProductsComponent },
       { path: 'products/:productId', component: DetailComponent },
       { path: 'cart', component: GiohangComponent },
+      { path: 'hcn', component: HcnComponent },
+      { path: 'ttsv', component: TtsvComponent },
+      { path: 'ttl', component: TtlComponent },
+      { path: 'banhang', component: BanhangComponent },
       // { path: '**', redirectTo: '', pathMatch: 'full' }
 
     ], { enableTracing: true })

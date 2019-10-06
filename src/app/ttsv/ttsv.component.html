@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Họ và tên</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        [(ngModel)]="ttsv.hvt" [ngModelOptions]="{standalone: true}">
+
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Ngày sinh</label>
+                    <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        [(ngModel)]="ttsv.ngaysinh" [ngModelOptions]="{standalone: true}">
+
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Giới tính</label>
+                    <select class="form-control" id="exampleFormControlSelect1" [(ngModel)]="ttsv.gioitinh"
+                        [ngModelOptions]="{standalone: true}">
+                        <option>Nam</option>
+                        <option>Nữ</option>
+
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Điểm</label>
+                    <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        [(ngModel)]="ttsv.diem" [ngModelOptions]="{standalone: true}">
+
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Học lực</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        [(ngModel)]="ttsv.hocluc" [ngModelOptions]="{standalone: true}">
+
+                </div>
+                <button type="button" class="btn btn-success" (click)="seen()">xem</button>
+            </form>
+        </div>
+    </div>
+</div>

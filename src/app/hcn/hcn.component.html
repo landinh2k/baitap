@@ -1,0 +1,34 @@
+<p>hcn works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Chiều dài</label>
+                    <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        width="200px" [(ngModel)]="hcn.cd" [ngModelOptions]="{standalone: true}">
+
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Chiều rộng</label>
+                    <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        [(ngModel)]="hcn.cr" [ngModelOptions]="{standalone: true}">
+
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Diện tích</label>
+                    <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        [(ngModel)]="hcn.dt" [ngModelOptions]="{standalone: true}">
+
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Chu vi</label>
+                    <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        [(ngModel)]="hcn.cv" [ngModelOptions]="{standalone: true}">
+
+                </div>
+                <button type="button" class="btn btn-success" (click)="tinh()">Tính</button>
+            </form>
+        </div>
+    </div>
+</div>
